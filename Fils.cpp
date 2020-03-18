@@ -10,7 +10,7 @@ Fils::Fils() {
     m_button = new QPushButton;
     m_button->setText("fils");
     //QObject::connect(m_button, SIGNAL(clicked()),this, SLOT(close())); //Ferme la page
-    QObject::connect(m_button, SIGNAL(clicked()),this, SLOT(slotSetButtonName()));
+    connect(m_button, SIGNAL(clicked()),this, SLOT(slotSetButtonName()));
     vBox->addWidget(m_button);
     parent->setLayout(vBox);
     setCentralWidget(parent);
@@ -18,5 +18,6 @@ Fils::Fils() {
 }
 
 void Fils::slotSetButtonName() {
+    m_button->setText("test");
     std::cout << "test" << std::endl;
 }

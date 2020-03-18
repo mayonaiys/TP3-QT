@@ -10,6 +10,7 @@
 #include <QtWidgets/QMainWindow>
 
 class Fils : public QMainWindow{
+    Q_OBJECT;
 private:
     QPushButton* m_button;
 public:
