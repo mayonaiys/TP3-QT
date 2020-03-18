@@ -6,7 +6,16 @@
 #define TP3_FILS_H
 
 
-class Fils {
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QMainWindow>
+
+class Fils : public QMainWindow{
+private:
+    QPushButton* m_button;
+public:
+    Fils();
+public slots:
+    void slotSetButtonName();
 
 };
 
