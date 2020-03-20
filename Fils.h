@@ -8,15 +8,18 @@
 
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QTextEdit>
 
 class Fils : public QMainWindow{
     Q_OBJECT;
 private:
     QPushButton* m_button;
+    QTextEdit* m_textZone;
 public:
     Fils();
 public slots:
     void slotSetButtonName();
+    void slotAfficheIHM1();
 
 };
 
